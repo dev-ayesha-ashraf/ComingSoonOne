@@ -219,3 +219,25 @@ li{
     transform: scale(0.9);
     transition: all 1s ease-in-out;
 }
+@media(max-width:800px){
+  .main{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .features{
+    text-align: center;
+  }
+  .video-placeholder{
+    width: 65%;
+  }
+  .colors , .Magento{
+    text-align: center;
+  }
+ .Magento{
+  width: 100%;
+ }
+ .cta-button{
+  margin-left: 30%;
+ }
+}
