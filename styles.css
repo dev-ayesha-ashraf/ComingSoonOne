@@ -1,11 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-body{
-    background-color: #f9edc3f9;
+
+body {
+  background-color: #f9edc3f9;
 }
+
 /* canvas {
     position: fixed;
     top: 0;
@@ -14,230 +16,257 @@ body{
     height: 100vh;
     z-index: -1;
 } */
-li strong{
-    color: #ff3b3b;
-    padding-left: 4px;
+li strong {
+  color: #ff3b3b;
+  padding-left: 4px;
 }
-li i{
-    color: #ff3b3b;
+
+li i {
+  color: #ff3b3b;
 }
-.main{
-    display: flex;
-    justify-content: space-around;
-   /* padding-left: 20px; */
-   /* padding-right: 20px; */
-    margin-top: 30px;
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+  margin-top: 50px;
 }
 
 /* Video Placeholder */
 .video-placeholder {
-    width: 36%;
-    height: 200px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    margin: 20px 0;
-    box-shadow: 0 0 20px rgba(255, 152, 0, 0.4);
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  width: 36%;
+  height: 280px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(255, 152, 0, 0.4);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
-.Magento{
-    margin-top: 10px;
-    width: 70%;
+
+.Magento {
+  margin-top: 10px;
+  width: 70%;
+  font-size: 20px;
 }
-ul{
-    list-style: none;
-    margin-top: 18px;
+
+ul {
+  list-style: none;
+  margin-top: 18px;
 }
-li{
-    font-size: 13px;
-    margin-top: 4px;
+
+li {
+  font-size: 16px;
+  margin-top: 4px;
 }
 
 .play-btn {
-    background: linear-gradient(45deg, #ff8c00, #ff3b3b);
-    border: none;
-    color: white;
-    font-size: 24px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
-    outline: none;
-  }
-  
-  .play-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
-  }
-  
-  .play-btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
-  }
-  .custom-alert {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 30%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(45deg, #ff8c00, #ff3b3b);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 18px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    display: none;
-    z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  .custom-alert p{
-    margin-top: 20px;
-  }
-  .custom-alert button {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: white;
-    color: #ff3b3b;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 10px;
-    font-size: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .custom-alert button:hover {
-    background: #ff3b3b;
-    color: white;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translate(-50%, -55%);
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-    }
-  }
-  .cta-button {
-    display: inline-block;
-    background: #ff8c00;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 24px;
-    border-radius: 8px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
-    position: relative;
-    overflow: hidden;
-    margin-left: 41%;
-    margin-top: 20px;
-    
-  }
-  
-  .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
-  }
-  
-  .cta-button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
-  }
-  
-  .cta-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .cta-button:hover::before {
-    left: 100%;
-  }
-.foottext{
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-}
-.colors{
-    color: #ff8c00;
-}
-/* Curtain Animation */
-.curtain {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
-    z-index: 100;
+  background: linear-gradient(45deg, #ff8c00, #ff3b3b);
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+  outline: none;
 }
 
-.left-curtain, .right-curtain {
-    width: 50%;
-    height: 100%;
-    background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg'); /* Change to your curtain image */
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
 }
+
+.play-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+}
+
+.custom-alert {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #ff8c00, #ff3b3b);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.custom-alert p {
+  margin-top: 20px;
+}
+
+.custom-alert button {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: white;
+  color: #ff3b3b;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.custom-alert button:hover {
+  background: #ff3b3b;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -55%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ff8c00;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  margin-left: 41%;
+  margin-top: 20px;
+
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
+}
+
+.cta-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(255, 0, 0, 0.5);
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.foottext {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.colors {
+  color: #ff8c00;
+  font-size: 50px;
+}
+
+/* Curtain Animation */
+.curtain {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 100;
+}
+
+.left-curtain,
+.right-curtain {
+  width: 50%;
+  height: 100%;
+  background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg');
+  /* Change to your curtain image */
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+}
+
 .left-curtain {
-    left: 0;
-    background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg'); /* Left curtain image */
+  left: 0;
+  background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg');
+  /* Left curtain image */
 }
 
 .right-curtain {
-    right: 0;
-    background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg'); /* Right curtain image */
+  right: 0;
+  background-image: url('ksenia-boikova-h3FTmPusZuk-unsplash.jpg');
 }
 
 /* Main Content */
 .main {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: all 1s ease-in-out;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 1s ease-in-out;
 }
-@media(max-width:800px){
-  .main{
+
+@media(max-width:800px) {
+  .main {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
   }
-  .features{
+
+  .features {
     text-align: center;
   }
-  .video-placeholder{
+
+  .video-placeholder {
     width: 65%;
   }
-  .colors , .Magento{
+
+  .colors,
+  .Magento {
     text-align: center;
   }
- .Magento{
-  width: 100%;
- }
- .cta-button{
-  margin-left: 30%;
- }
+
+  .Magento {
+    width: 100%;
+  }
+
+  .cta-button {
+    margin-left: 30%;
+  }
 }
